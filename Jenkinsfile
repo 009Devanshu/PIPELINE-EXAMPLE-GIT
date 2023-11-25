@@ -7,7 +7,7 @@ pipeline{
         stage("compile"){
            steps{
              sh 'javac Test.java'
-             sh 'echo "${ VERSION_NAME}"'
+             sh 'echo "${VERSION_NAME}"'
            }
         }
         stage("run"){
